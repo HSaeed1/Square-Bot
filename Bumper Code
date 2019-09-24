@@ -1,0 +1,18 @@
+task main()
+{while(1==1)
+{
+ motor[rightMotor] = 127;    
+ motor[leftMotor]  = 127;   
+ 
+ if(SensorValue[bumper1]==1)
+ 
+ {
+  motor[rightMotor] = -127;
+  motor[leftMotor] = -127;
+  wait1Msec(700);
+  motor[rightMotor] = 90;
+  motor[leftMotor] = -90;
+  wait1Msec(700);
+}
+}
+}
